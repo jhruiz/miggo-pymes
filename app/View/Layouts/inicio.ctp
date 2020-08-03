@@ -2,7 +2,7 @@
 <html>
     <head><meta charset="big5">
       <?php echo $this->Html->charset(); ?>        
-      <title>Miggo</title>        
+      <title>Pymes - Miggo</title>        
       <?php
         echo $this->Html->meta(array('name' => 'viewport', 'content' => 'width=device-width, initial-scale=1.0',  'http-equiv' => "X-UA-Compatible"));
         echo $this->Html->meta('icon');
@@ -23,7 +23,7 @@
         echo $this->Html->script('jquery-ui/js/jquery-ui-1.10.3.custom.min');
         echo $this->Html->script('bootbox.min.js');
         echo $this->Html->css('jquery-ui-css/redmond/jquery-ui.css');
-        /** Adicionamos la librer赤a para el menu * */
+        /** Adicionamos la librer嚙踝蕭a para el menu * */
         echo $this->Html->script('menu');
 
         /** Adicionamos funciones para mostrar modal ** */
@@ -353,9 +353,9 @@
        
              <?php if ($flash = $this->Session->flash()) { ?>
                 <div class="alert alert-danger alert-dismissible fade in" role="alert">
-                  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">℅</span>
+                  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">嚙踝蕭</span>
                   </button>
-                  <strong>Atenci車n.</strong> <?php echo $flash ?>.
+                  <strong>Atenci嚙踝蕭n.</strong> <?php echo $flash ?>.
                 </div>
                     <?php } ?>
             
