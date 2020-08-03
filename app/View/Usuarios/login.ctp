@@ -113,9 +113,9 @@
     <div class="row vertical-offset-100 " >
         <div class="col-md-4 col-md-offset-5">
             <div class="panel panel-default cac">
-                <div class="panel-heading cac_title">
+                <!-- <div class="panel-heading cac_title">
                     <img src="/img/png/torqueracingp.png" >
-                </div>
+                </div> -->
                 <div class="panel-body">
                     <form accept-charset="UTF-8" role="form">
                     <fieldset>
