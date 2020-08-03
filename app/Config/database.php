@@ -15,7 +15,7 @@ class DATABASE_CONFIG {
 		'host' => 'localhost',
 		'login' => 'miposcom_mysql',
 		'password' => 'root9002',
-		'database' => 'miposcom_torque',	    
+		'database' => 'miposcom_pymes',	    
 		//'datasource' => 'Database/Mysql',
 		//'persistent' => false,
 		//'host' => 'localhost',
