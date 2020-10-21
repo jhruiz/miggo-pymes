@@ -2,7 +2,8 @@
 <div class="container body">
 <div class="main_container">
     <div class="prefacturas index">
-   
+
+<br>   
         <div class="col-md-12">
             <div class="x_panel">
                 <div class="x_title">
@@ -15,14 +16,14 @@
                     <div class="col-md-3">
                         <div class="form-group ">  
                             <label>Cliente</label><br>                          
-                            <input name="cliente" class="form-control" placeholder="Nombre del Cliente" type="text">
+                            <input name="cliente" value="<?php echo $cliente?>" class="form-control" placeholder="Nombre del Cliente" type="text">
                         </div>             
                     </div>       
                 
                     <div class="col-md-3">
                         <div class="form-group ">  
                             <label>Vehículo</label><br>                          
-                            <input name="vehiculo" class="form-control" placeholder="Placa del Vehículo" type="text">
+                            <input name="vehiculo" class="form-control" value="<?php echo $placa?>" placeholder="Placa del Vehículo" type="text">
                         </div>             
                     </div>
                 
@@ -63,6 +64,9 @@
                                 <table class="table table-hover" cellpadding="0" cellspacing="0" >
                                     <thead>
                                         <tr>
+                                            <th><?php echo ('Id prefactura'); ?></th>
+                                            <th><?php echo ('Usuario creador de prefactura'); ?></th>
+                                            <th><?php echo ('Nombre Empresa '); ?></th>
                                             <th><?php echo ('Cliente'); ?></th>
                                             <th><?php echo ('Vehículo'); ?></th>
                                             <th><?php echo ('Fecha'); ?></th>
@@ -73,6 +77,9 @@
                                     <tbody>
                                         <?php foreach ($prefacturas as $prefactura): ?>
                                         <tr>
+                                            <td><?php echo h($prefactura['Prefactura']['id']); ?>&nbsp;</td>
+                                            <td><?php echo h($prefactura['US']['nombre']); ?>&nbsp;</td>
+                                            <td><?php echo h($prefactura['EM']['nombre']); ?>&nbsp;</td>
                                             <td><?php echo h($prefactura['CL']['nombre']); ?>&nbsp;</td>
                                             <td><?php echo h($prefactura['VH']['placa']); ?>&nbsp;</td>
                                             <td><?php echo h($prefactura['Prefactura']['created']); ?>&nbsp;</td>
