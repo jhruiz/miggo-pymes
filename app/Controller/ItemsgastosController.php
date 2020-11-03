@@ -21,7 +21,9 @@ class ItemsgastosController extends AppController {
  * @return void
  */
 	public function index() {
-            $paginate = array();            
+
+			$paginate = array();          			
+			$paginate['Itemsgasto.empresa_id'] = $this->Auth->user('empresa_id');
             
             $this->Itemsgasto->recursive = 0;
             $this->set('itemsgastos', $this->Paginator->paginate('Itemsgasto', $paginate));
