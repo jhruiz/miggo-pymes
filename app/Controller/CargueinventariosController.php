@@ -487,7 +487,7 @@ class CargueinventariosController extends AppController {
             }else{
                 echo json_encode(array('resp' => '2', 'producto' =>$arrProductos));
             }                  
-        }   
+        }       
         
         /**
          * se obtiene el suministro por id de producto desde el stock y se relaciona con la orden de trabajo
